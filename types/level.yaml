@@ -1,0 +1,11 @@
+name: level
+labelPlural: Levels
+labelSingular: Level
+
+fields:
+  notion:
+    type: string
+  behaviours:
+    type: networq:competency:behaviour[]
+  competency:
+    type: networq:competency:competency

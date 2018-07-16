@@ -1,0 +1,24 @@
+name: networq:competency
+description: Competency dictionaries
+license: MIT
+
+widgets:
+  competenciesTab:
+    type: networq:competency:dictionary
+    hook: tabs
+    label: Competencies
+
+  competencyLevelsTab:
+    type: networq:competency:competency
+    hook: tabs
+    label: Levels
+
+  levelTab:
+    type: networq:competency:level
+    hook: tabs
+    label: Level
+
+  levelProperties:
+    type: networq:competency:level
+    hook: properties
+    label: Level properties

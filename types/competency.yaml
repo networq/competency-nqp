@@ -1,0 +1,9 @@
+name: competency
+labelPlural: Competencies
+labelSingular: Competency
+
+fields:
+  details:
+    type: string
+  levels:
+    type: networq:competency:level[]

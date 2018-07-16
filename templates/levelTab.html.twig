@@ -1,0 +1,19 @@
+<div class="card h-100">
+    <div class="card-header">
+        <a href="{{ node|nodePath }}">
+        {{ node['networq:core:node']['name'] }}
+        </a>
+    </div>
+    <div class="card-body">
+        <b>Notion:</b><br />
+        {{ node['networq:competency:level']['notion'] }}<br />
+        <br />
+        <b>Behaviours:</b><br />
+
+        <ul>
+        {% for behaviour in node['networq:competency:level']['behaviours'] %}
+            <li>{{ behaviour['networq:core:node']['name'] }}</li>
+        {% endfor %}
+        </ul>
+    </div>
+</div>

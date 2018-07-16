@@ -1,0 +1,8 @@
+<div class="row">
+  {% for level in node['networq:competency:competency']['levels'] %}
+    <div class="col"  style="margin-bottom: 10px;">
+      {% set node = level %}
+      {% include('@networq:competency/levelTab.html.twig') %}
+    </div>
+  {% endfor %}
+</div>

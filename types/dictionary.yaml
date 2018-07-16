@@ -1,0 +1,7 @@
+name: dictionary
+labelPlural: Dictionaries
+labelSingular: Dictionary
+
+fields:
+  competencies:
+    type: networq:competency:competency[]

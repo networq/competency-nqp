@@ -1,0 +1,12 @@
+<ul class="list-group">
+  {% for competency in node['networq:competency:dictionary']['competencies'] %}
+
+    <li class="list-group-item">
+        <h3>{{ competency['networq:core:node']['name'] }}</h3>
+        {{ competency|nodeButton|raw }}
+        {% if competency['networq:competency:competency']['details'] %}
+        <p>{{ competency['networq:competency:competency']['details'] }}</p>
+        {% endif %}
+    </li>
+  {% endfor %}
+</ul>
